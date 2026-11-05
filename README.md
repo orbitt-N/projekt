@@ -1,0 +1,2 @@
+# projekt
+Wyszukiwarka zduplikowanych plików
