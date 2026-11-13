@@ -28,11 +28,13 @@ class HashEngine:
                 results[path] = future.result()
         return results
 
-    @staticmetod
-    def compute_multiprocess(file_path:Dict (str, str):
-        results: Dict(str, str) = {}
+    @staticmethod
+    def compute_multiprocess(file_path: List[str], max_workers: int = 4) -> Dict[str, str]:
+        """Przetwarzanie równoległe z użyciem procesów"""
+        results: Dict[str, str] = {}
         with ProcessPoolExecutor(max_workers=max_workers) as executor:
-            path = future_to_path(future)
-            try:
+            future_to_path = {executor.submit(compute_file_hash, path):path for path in file_path}
+            for future in future_to_path:
+                path = future_to_path[future]
                 result[path] = future.results()
             return results
