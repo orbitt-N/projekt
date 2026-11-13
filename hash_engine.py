@@ -27,3 +27,12 @@ class HashEngine:
                 path = future_to_path[future]
                 results[path] = future.result()
         return results
+
+    @staticmetod
+    def compute_multiprocess(file_path:Dict (str, str):
+        results: Dict(str, str) = {}
+        with ProcessPoolExecutor(max_workers=max_workers) as executor:
+            path = future_to_path(future)
+            try:
+                result[path] = future.results()
+            return results
