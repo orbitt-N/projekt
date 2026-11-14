@@ -10,3 +10,4 @@ Projekt został zrealizowany z wykorzystaniem iteratorów, dekoratorów, generat
 
 ### Tabela mapowania
 | Zagadnienia  |  | Gdzie w kodzie |
+| --- | | --- |
