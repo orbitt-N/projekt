@@ -9,4 +9,4 @@ Projekt został zrealizowany z wykorzystaniem iteratorów, dekoratorów, generat
 3. Po uruchomieniu aplikacji wpisz/wklej ścieżkę katalogu który chcesz zeskanować lub wpisując "." zeskanuje się katalog w którym aktualnie znajduje się aplikacja.
 
 ### Tabela mapowania
-Zagadnienia  
+| Zagadnienia  |  | Gdzie w kodzie |
