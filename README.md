@@ -12,3 +12,10 @@ Projekt został zrealizowany z wykorzystaniem iteratorów, dekoratorów, generat
 | Zagadnienie | Gdzie w kodzie |
 | :--- | :--- |
 | Dekorator funkcji z parametrami | `utils/decorators.py` $\rightarrow$ `validate_path_exists(min_size_mb)` |
+| Dekorator metody / property | `core/scanner.py` $\rightarrow$ `FileScanner.root_dir` (`@property` i setter) |
+| Iterator | `utils/iterators.py` $\rightarrow$ klasa `DuplicateGroupIterator` |
+| Generator | `core/scanner.py` $\rightarrow$ `FileScanner.scan_files()` |
+| Wyrażenia regularne (Regex) | `core/scanner.py` $\rightarrow$ `re.compile()` (filtrowanie rozszerzeń i nazewnictwa) |
+| Wątki | `core/hash_engine.py` $\rightarrow$ `HashEngine.compute_threaded` (`ThreadPoolExecutor`) |
+| Procesy | `core/hash_engine.py` $\rightarrow$ `HashEngine.compute_multiprocess` (`ProcessPoolExecutor`) |
+| Pomiar GIL | `benchmarks/gil_benchmark.py` $\rightarrow$ `run_benchmark()` |
