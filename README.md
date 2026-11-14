@@ -26,3 +26,15 @@ Projekt został zrealizowany z wykorzystaniem iteratorów, dekoratorów, generat
 | Sekwencyjnie | `~0.0450 s` |
 | 4 wątki (`ThreadPoolExecutor`) | `~0.0150 s` |
 | 4 procesy (`ProcessPoolExecutor`) | `~0.0350 s` |
+
+Wnioski dotyczące GIL
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
