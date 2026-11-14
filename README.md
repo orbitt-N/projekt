@@ -10,4 +10,4 @@ Projekt został zrealizowany z wykorzystaniem iteratorów, dekoratorów, generat
 
 ### Tabela mapowania
 Zagadnienia  ||  Gdzie w kodzie
-Dekorator funkcji z parametrami  ||  decorators.py -> validate_path_exists(min_size_mb: int = 0)
+1. Dekorator funkcji z parametrami  ||  decorators.py -> validate_path_exists(min_size_mb: int = 0)
