@@ -27,14 +27,9 @@ Projekt został zrealizowany z wykorzystaniem iteratorów, dekoratorów, generat
 | 4 wątki (`ThreadPoolExecutor`) | `~0.0150 s` |
 | 4 procesy (`ProcessPoolExecutor`) | `~0.0350 s` |
 
-Wnioski dotyczące GIL
-1.
-2.
-3.
-4.
-5.
-6.
-7.
-8.
-9.
-10.
+### Wnioski dotyczące GIL
+1. GIL w Pythonie ogranicza współbieżne wykonywanie kodu bajtowego przez wiele wątków w obrębie jednego procesu
+2. Dzięki zwolnieniu GIL wątki mogą efektywnie współdzielić czas procesora, co znacząco skraca czas przetwarzania
+3. Przy mniejszej liczbie plików narzut związany z inicjalizacją i komunikacją między procesorami może sprawić, że procesy będą działać wolniej niż wątki
+4. Operacje systemowe zwalniają blokadę GIL, pozwalając innym wątkom na efektywną pracę w tym samym czasie
+5. Wątki doskonale sprawdzają się przy operacjach I/O i hashowaniu blokowym zwalniającym GIL
