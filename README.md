@@ -1,5 +1,5 @@
 # Wyszukiwarka zduplikowanych plików
-## Opis projektu i instrukcja uruchamiania
+## Opis projektu
 Aplikacja służy do skanowania katalogów, wyszukiwanie zduplikowanych plików na podstawie skrótów kryptograficznych SHA-256 oraz ich grupowania.
 Projekt został zrealizowany z wykorzystaniem iteratorów, dekoratorów, generatorów, wyrażeń regularnych oraz współbierzności
 
@@ -21,7 +21,7 @@ Projekt został zrealizowany z wykorzystaniem iteratorów, dekoratorów, generat
 | Pomiar GIL | `benchmarks/gil_benchmark.py` $\rightarrow$ `run_benchmark()` |
 
 ### Wyniki pomiarów wydajności
-| Metoda przetwarzania | Czas wykonania (30 plików) |
+| Metoda przetwarzania | Czas wykonania |
 | :--- | ---: |
 | Sekwencyjnie | `~0.0450 s` |
 | 4 wątki (`ThreadPoolExecutor`) | `~0.0150 s` |
