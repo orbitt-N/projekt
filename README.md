@@ -23,9 +23,9 @@ Projekt został zrealizowany z wykorzystaniem iteratorów, dekoratorów, generat
 ### Wyniki pomiarów wydajności
 | Metoda przetwarzania | Czas wykonania |
 | :--- | ---: |
-| Sekwencyjnie | `~0.0450 s` |
-| 4 wątki (`ThreadPoolExecutor`) | `~0.0150 s` |
-| 4 procesy (`ProcessPoolExecutor`) | `~0.0350 s` |
+| Sekwencyjnie | `~0.0044 s` |
+| 4 wątki (`ThreadPoolExecutor`) | `~0.0093 s` |
+| 4 procesy (`ProcessPoolExecutor`) | `~0.7406 s` |
 
 ### Wnioski dotyczące GIL
 1. GIL w Pythonie ogranicza współbieżne wykonywanie kodu bajtowego przez wiele wątków w obrębie jednego procesu
