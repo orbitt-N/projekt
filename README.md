@@ -33,3 +33,8 @@ Projekt został zrealizowany z wykorzystaniem iteratorów, dekoratorów, generat
 3. Przy mniejszej liczbie plików narzut związany z inicjalizacją i komunikacją między procesorami może sprawić, że procesy będą działać wolniej niż wątki
 4. Operacje systemowe zwalniają blokadę GIL, pozwalając innym wątkom na efektywną pracę w tym samym czasie
 5. Wątki doskonale sprawdzają się przy operacjach I/O i hashowaniu blokowym zwalniającym GIL
+
+### Problemy napotkane podczas tworzenia projektu
+1. Literówki i błędy w kodzie podczas pisania modułów
+2. Brak odpowiedniej funkcji do obsługi rekurencji np. przy pisaniu generatora scan_files() początkowo użyłem yield sub_scanner.scan_files(), przez co zamiast ścieżek do plików zwracane były obiekty generatora. Problem został usunięty po zastosowaniu yield from
+3. Brak metody setdefault() przy grupowaniu hashy. Przy pisaniu pętli grupującej duplikaty w main.py przypisanie hash_groups[file_hash].append(path) kończyło się błędem. Dopiero po zmianie metody na hash_groups.setdefault(file_hash, []).append(path) przestał wyskakiwać błąd
